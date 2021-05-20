@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./Partials/head.ejs') %>
+  <body>
+    <%- include('./Partials/nav.ejs') %>
+    <div class="blog-container">
+      <div class="blogs">
+        <h1>Recent Blogs</h1>
+        <div class="blog">
+        <% if (results.length > 0 ) { %> 
+        <% results.map(blog => { %>
+        <a href="/blogs/<%= blog.id %>">
+            <h3><%= blog.title %></h3>
+            <p><%= blog.preview %></p>
+            <% }) %> <% } else { %>
+            <p>There are no blogs to display</p>
+            <% } %>
+          </a>
+        </div>
+      </div>
+      <div class="create-blog">
+        <a href="createBlog">Create new blog</a>
+      </div>
+    </div>
+    <%- include('./Partials/footer.ejs') %>
+  </body>
+</html>

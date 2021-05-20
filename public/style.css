@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: tomato;
+}
+
+.blog a {
+  border-left: 5px solid tomato;
+  display: block;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+nav,
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav {
+  height: 100px;
+  border-bottom: 1px solid lightblue;
+}
+nav h2 {
+  color: aqua;
+}
+nav a {
+  color: crimson;
+}
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin: 0 5px;
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  border-top: 1px solid lightblue;
+}
+
+footer p {
+  text-align: center;
+}
+
+.header h2 a {
+  text-decoration: none;
+  color: aqua;
+}
+
+.center {
+  text-align: center;
+}
+.blog-container {
+  display: flex;
+  justify-content: center;
+
+  /* align-items: center; */
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+form {
+  width: 300px;
+  padding: 10px 0;
+}
+.form-group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.btn-wrapper {
+  width: 100%;
+  padding-top: 5px;
+}
+.btn {
+  padding: 8px 12px;
+  background-color: tomato;
+  border: none;
+  outline: none;
+  color: white;
+}
+input,
+textarea {
+  width: 100%;
+  border: 1px solid grey;
+  outline: none;
+  padding: 8px 4px;
+}
+
+.wrapper {
+  width: 60%;
+  margin: 0 auto;
+}

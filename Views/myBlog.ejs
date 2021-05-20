@@ -1,0 +1,14 @@
+<html lang="en">
+  <%- include('./Partials/head.ejs') %>
+  <body>
+    <%- include('./Partials/nav.ejs') %>
+    <div class="wrapper">
+      <% blogs.forEach((blog) => { %>
+      <h3 class="center"><%= blog.title %></h3>
+      <small><%= blog.author %></small>
+      <p><%= blog.article %></p>
+      <% }) %>
+    </div>
+    <%- include('./Partials/footer.ejs') %>
+  </body>
+</html>
